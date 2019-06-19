@@ -1,0 +1,23 @@
+//Microsoft Store'dan Ubuntu isimli uygulama indirilir, gerekli kullanıcı adı ve şifre ayarlamaları yapılır.
+
+
+
+1)      sudo apt-get update && sudo apt-get upgrade 	//Gerekli işletim sistemi ve package güncellemelerini yapar.
+
+2)	sudo apt-get install apache2 	//Apache2 paketi kurulur.
+
+3)	sudo service apache2 start 	//Apache2 servisi çalıştırılır.
+	
+4)	sudo apt-get install php	//PHP paketi kurulur.
+				
+5)	sudo php -v		//Yüklemiş olduğumuz php versiyonunu görüntüler.
+
+6)	cd /var/www/html 	//PHP dosyalarının çalıştırılacağı dizin.
+
+7)	sudo nano test.php	//test.php isimli bir dosya yaratılır.
+
+8)	<?php echo 'Başarılı!'; ?>	//Oluşturduğunuz dosyaya yapıştırın, Ctrl+S ve Ctrl+X kaydedip çıkmanızı sağlar. 	
+
+9)	sudo service apache2 restart	//PHP kurulumundan sonra apache2 server'ı yeniden başlatmamız gerekir.
+
+10)	//Tarayıcımızdan localhost/test.php adresinden çalıştırabiliriz.
